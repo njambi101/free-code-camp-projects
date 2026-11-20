@@ -1,19 +1,35 @@
 import React from "react";
+import { Nav } from "react-bootstrap";
+
 
 export function Footer(){
+   
     return(
        <div>
         <nav>
-            <ul>
-                <li><a href="#">klk</a></li>
-                 <li><a href="#">ll</a></li>
-                  <li><a href="#">kk</a></li>
-                   <li><a href="#">ll</a></li>
-                    <li><a href="#">ll</a></li>
-                     <li><a href="#">ll</a></li>              
+            <ul className="nav justify-content-center  ">
+                <li className="nav-item">
+                    <a href="#" className="nav-link custom-link">Fitness Dashboard</a>
+                    </li>
+                 <li className="nav-item">
+                    <a href="#" className="nav-link custom-link">Watch videos</a>
+                    </li>
+                  <li className="nav-item"> 
+                    <a href="#" className="nav-link custom-link">Privacy Policy</a>
+                     </li>
+                   <li className="nav-item">
+                    <a href="#" className="nav-link custom-link">Services</a>
+                    </li>
+                    <li className="nav-item">
+                        <a href="#" className="nav-link custom-link">Discord</a>
+                        </li>
+                     <li className="nav-item">
+                        <a href="#" className="nav-link custom-link">Tern & Conditions</a>
+                        </li>              
             </ul>
         </nav>
-        <p>&copy;2024 Fitness Dashboard.All Rights Reserved.</p>
+        <p className="text-center">&copy;2024 Fitness Dashboard.All Rights Reserved.</p>
+     
        </div>
     )
 }
