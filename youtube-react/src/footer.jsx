@@ -33,3 +33,13 @@ export function Footer(){
        </div>
     )
 }
+
+export function Greeting({name,age}){
+    console.log({name})
+    return(
+        <>
+        <h1>Hi! my name is{name}</h1>
+        <p>and your age is {age}</p>
+        </>
+    )
+}
