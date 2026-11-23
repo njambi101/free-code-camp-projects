@@ -16,3 +16,17 @@ export function User ({name, age, gender}) {
         </>
     )
 }
+
+ export function card({children}){
+    return (
+        <div className="card">{children}</div>
+    )
+
+}
+
+
+function open({children}){
+    return(
+        <p>{children}</p>
+    )
+}

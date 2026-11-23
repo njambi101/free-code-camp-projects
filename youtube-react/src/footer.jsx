@@ -1,6 +1,24 @@
 import React from "react";
 import { Nav } from "react-bootstrap";
 
+export function Greeting({name,age}){
+    console.log({name})
+    return(
+        <>
+        <h1>Hi! my name is{name}</h1>
+        <p>and your age is {age}</p>
+        </>
+    )
+}
+
+export function A ({isLoggedIn}){
+    return <h1>{isLoggedIn ? "welcome back": "please try again"}</h1>
+}
+
+export function News ({message}){
+    return <div>{message && <p>{message}</p>}</div>
+    
+}
 
 export function Footer(){
    
@@ -34,12 +52,3 @@ export function Footer(){
     )
 }
 
-export function Greeting({name,age}){
-    console.log({name})
-    return(
-        <>
-        <h1>Hi! my name is{name}</h1>
-        <p>and your age is {age}</p>
-        </>
-    )
-}
