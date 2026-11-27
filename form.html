@@ -59,8 +59,13 @@
         let isError = false;
 
        const cleanInputString = (str) => {
-        const regex = /\+-/;
+        const regex = /[\+-\s]/g;
        }
+
+       const patt = /Geeks/s
+       const s1 = "geeks forGeeks"
+       const s2 = "forgeeks"
+       console.log(patt.test(s1))
 
 
     </script>
